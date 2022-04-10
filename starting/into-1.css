@@ -1,0 +1,89 @@
+
+
+.navbar-dark .navbar-brand {
+    color: #ffc107;
+}
+
+
+a.navbar-brand {
+    background-color: #111112bd;
+    width: 113px;
+    height: 67px;
+    text-align: center;
+    font-size: 32px;
+    transform: translate(10px, 41px);
+}
+
+span.navbar-brand.mb-0.h1 {
+    background-color: #181616a1;
+    width: 113px;
+    height: 67px;
+    text-align: center;
+    font-size: 32px;
+    transform: translate(15px, 52px);
+}
+/*end navbar*/
+
+/* start coursel*/
+.container {
+    margin-top:57px;
+}
+
+.carousel-caption.d-none.d-md-block {
+    transform: translate(0px, -322px);
+    background-color: #000000ba;
+    padding-left: 23px;
+    padding-right: 23px;
+    box-sizing: border-box;
+    min-height: 375px;
+    text-align: center;
+}
+
+.food{
+    min-height: 1000px;
+    min-width: 1000px;
+}
+
+.carousel-inner {
+    height: 551px;
+}
+
+.carousel-item {
+    transform: rotateX(22deg) translate(0px, -182px);
+}
+/* end coursel*/
+
+/* start form*/
+.contact{
+    background: url(../imge.service/Food.gif) no-repeat center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.faild {
+    background-color: #000000ba;
+    background-size: cover;
+    min-height: 300px;
+}
+
+i.bi.bi-person-fill{
+    color: #f5f3f1;
+    font-size: 76px;
+}
+
+input#gridCheck {
+    position: absolute;
+}
+
+h6 {
+    color: darkgoldenrod;
+}
+
+.col-12 {
+    margin-bottom: 26px;
+}
+
+h1, p {
+    color: #f0f8ff5e;
+}
+/* end form*/

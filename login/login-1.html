@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&family=Satisfy&family=Vollkorn:ital@1&display=swap"
+ rel="stylesheet">-->
+ <script src="../Respond.js v1.4.2"></script>
+ <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!--<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>-->
+    
+    
+        
+        <section class="contact">
+            <div class="faild">
+             <div class="container text-center">
+                <i class="bi bi-person-fill"></i>
+                <div class="logo">
+                  <h1 class="h1">service</h1>
+          
+                </div>
+                <!--strat form-->
+                
+          
+                <form class="row g-3">
+                  <div class="col-md-6 outline">
+                    <label for="inputEmail4" class="form-label"></label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label"></label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                  <form class="row g-3">
+                    
+                  <div class="col-12">
+                    <div class="form-check text-center">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        <h6 class="h6">are you agree to terms and privacy policy ?</h6>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary text-center btn-lg ">Sign up</button>
+                  </div>
+                </form>
+                <!--end form-->
+              </div>
+          
+            </div>
+
+            
+          
+          </section>
+          <div id="price"></div>
+          <button onclick="sayHi ()"> call the function</button>
+
+          <input type="text" id="dollar">
+          <button onclick="conve ()"> calculate</button>
+          <div id="message"></div>
+          
+          <!--end section-->
+          <script>
+            function sayHi ( ){
+
+              var yourage = prompt("whats your age?");
+            if(yourage <18){
+              document.getElementById('price').innerHTML =
+              "sorry your age is " + yourage +"you are not alloewd here ";
+            } else{
+              document.getElementById('price').innerHTML=
+              "hello your age is "+ yourage + "you are welcome here" ;
+              return 10+10;
+              
+            }
+            }
+            sayHi();
+
+            function calcDays(age){
+              "use strict";
+              var year = 365;
+              return age* year;
+            }
+            var dynamicAge = prompt("whats your age")
+            document.getElementById("calc").innerHTML = calcDays(dynamicAge);
+
+            function conve(){
+              "use strict";
+              var amount = document.getElementById("dollar"). value,
+              result = amount*3,
+              message = document.getElementById("message");
+              message.innerHTML = amount + "dollar is worth "+ result + ""+ "riyal";
+            } 
+            
+          </script>
+<script src="../jquery-3.6.0.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
